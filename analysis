@@ -1,0 +1,94 @@
+1. Nazwa incydentu:
+
+LastPass (2022)
+
+2. Organizacja i rok:
+
+LastPass, 2022
+
+3. Profil atakującego:
+
+Mimo prób, profilu atakującego nie udało się ustalić.
+Niemniej ustalone zostało, że nie był to żaden defekt produktów LastPass, ani nie został uzyskany nieautoryzowany 
+dostęp do systemów produkcyjnych.
+
+4. Wektor wejścia,
+
+Pierwszy atak:
+Służbowy laptop inżyniera oprogramowania został naruszony. Pozwolił on na nieautoryzowany dostęp do chmury środowiska
+developerskiego.
+
+Drugi atak:
+Adwersarz wziął za cel starszego inżyniera DevOps przez wykorzystanie zewnętrznego oprogramowania. Atakujący wykorzystał
+podatności do dostarczenia oprogramowania malware, obejścia zabezpieczeń, oraz uzyskania nieautoryzowanego dostępu do
+kopii zapasowych w chmurze.
+
+5. Cel działania,
+
+Nie było żadnego kontaktu od atakujących, ani żadnych żądań. Nie udało się więc ustalić motywów działania atakującego.
+Nie ma również żadnych dowodów, by atakujący był zaangażowany w marketing lub sprzedaż jakichkolwiek informacji 
+uzyskanych w trakcie incydentu. W środowisku developerskim nie było jednak żadnych danych klientów.
+
+Niemniej, jak zostało później ustalone, pierwszy atak został wykorzystany do zidentyfikowania celów do zainicjowania
+późniejszego drugiego ataku.
+
+
+6. Naruszone elementy CIA:
+
+Poufność:
+
+Została naruszona.
+Wykradzione zostały dane konfiguracji systemu, sekrety API, sekrety integracji zewnętrznych, oraz zaszyfrowane i 
+niezaszyfrowane dane klientów.
+
+Integralność:
+
+Nie została naruszona.
+Nie ma żadnych dowodów na jakiekolwiek zmiany w kodzie oraz oprogramowaniu, a wszystkie środowiska developerskie zostały
+usunięte oraz odbudowane, by upewnić się w powstrzymaniu i usunięciu atakującego ze wszystkich systemów.
+
+Dostępność:
+
+Nie została naruszona.
+Wszystkie systemy działały niezależnie od atakowanych systemów, nie było więc żadnych przerw w działaniu systemów
+produkcyjnych.
+
+7. Cyber Kill Chain:
+Etap (Co wydarzyło się w incydencie?):
+
+Reconnaissance: 
+
+Brak danych odnośnie tego, w jaki sposób przy pierwszym ataku adwersarz uzyskał dostęp do komputera inżyniera
+oprogramowania, jednak jego aktywność pozwoliła na wytypowanie celu do kolejnego ataku, więc możemy wyróżnić
+poniższe techniki:
+Search Closed Sources (wewnętrzne sekrety systemu, informacje techniczne, kod źródłowy)
+Gather Victim Identity Information (starszy inżynier DevOps) 
+Gather Victim Organization Information (wewnętrzne sekrety systemu LastPass, informacje techniczne, kod źródłowy)
+
+Weaponization:  
+
+Develop Capabilities (przygotowanie oprogramowania malware)
+
+Delivery:
+
+
+
+Exploitation:
+
+
+
+Installation:
+
+
+
+Command & Control:
+
+
+
+Actions on Objectives:
+
+
+
+8. Co poszło nie tak po stronie obrońców?
+9. Gdzie można było przerwać incydent?
+10. Trzy rekomendacje bezpieczeństwa
