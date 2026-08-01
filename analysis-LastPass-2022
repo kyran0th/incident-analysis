@@ -4,7 +4,7 @@ LastPass (2022)
 
 2. Organizacja i rok:
 
-LastPass, 2022
+LastPass US LP., 2022
 
 3. Profil atakującego:
 
@@ -71,7 +71,8 @@ Obtain Capabilities (wykorzystanie podatności zewnętrznego oprogramowania)
 
 Delivery:
 
-Brak konkretnych danych w jaki sposób adwersarz dostarczył szkodliwe oprogramowanie.
+Exploit Public-Facing Application (atakujący uzyskał pełny dostęp do komputera pracownika przez serwer Plex, który
+nie został uaktualniony, by naprawić krytyczną podatność i uzyskał w ten sposób hasło pracownika)
 
 Exploitation:
 
@@ -80,18 +81,17 @@ dostępu do danych)
 
 Installation:
 
-
+Exploitation for Client Execution
 
 Command & Control:
 
-Brak danych, aby adwersarz uzyskał zdalną kontrolę nad systemami. Tym bardziej, że nie dostał się on do systemów
+Brak wystarczających danych, aby adwersarz uzyskał zdalną kontrolę nad systemami. Tym bardziej, że nie dostał się on do systemów
 produkcyjnych.
 
 Actions on Objectives:
 
 Data from Cloud Storage (pozyskanie danych z backupów chmurowych, sekretów API, sekretów integracji z oprogramowaniem 
 zewnętrznym, zaszyfrowane i niezaszyfrowane dane klientów)
-
 
 8. Co poszło nie tak po stronie obrońców?
 
@@ -111,7 +111,8 @@ kroki podjęte przez LastPass nie wystarczyły, by go uniknąć.
 
 Właściwe przeszkolenie pracowników z zasad bezpieczeństwa w celu uniknięcia kolejnych incydentów.
 
-Zrezygnowanie z korzystania z podatnego oprogramowania zewnętrznego, bądź podjęcie kroków w celu właściwego zabezpieczenia
-tegoż oprogramowania.
+Zrezygnowanie z korzystania z podatnego oprogramowania zewnętrznego, bądź podjęcie kroków w celu właściwego zabezpieczenia lub
+uaktualnienia tegoż oprogramowania.
 
-
+Wdrożenie dobrej klasy oprogramowania EDR/XDR, co pozwoliłoby na monitorowanie urządzeń końcowych w celu wyszukiwania nietypowych
+zachowań i blokowania zagrożeń na danym sprzęcie
