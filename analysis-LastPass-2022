@@ -104,8 +104,14 @@ używając informacji zebranych w trakcie pierwszego incydentu bezpieczeństwa.
 
 9. Gdzie można było przerwać incydent?
 
-
+Wdrożenie odpowiednich zabezpieczeń po pierwszym incydencie powinno było pozwolić na uniknięcie drugiego ataku, jednak
+kroki podjęte przez LastPass nie wystarczyły, by go uniknąć.
 
 10. Trzy rekomendacje bezpieczeństwa
+
+Właściwe przeszkolenie pracowników z zasad bezpieczeństwa w celu uniknięcia kolejnych incydentów.
+
+Zrezygnowanie z korzystania z podatnego oprogramowania zewnętrznego, bądź podjęcie kroków w celu właściwego zabezpieczenia
+tegoż oprogramowania.
 
 
