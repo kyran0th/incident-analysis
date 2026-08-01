@@ -19,9 +19,9 @@ Służbowy laptop inżyniera oprogramowania został naruszony. Pozwolił on na n
 developerskiego.
 
 Drugi atak:
-Adwersarz wziął za cel starszego inżyniera DevOps przez wykorzystanie zewnętrznego oprogramowania. Atakujący wykorzystał
-podatności do dostarczenia oprogramowania malware, obejścia zabezpieczeń, oraz uzyskania nieautoryzowanego dostępu do
-kopii zapasowych w chmurze.
+Adwersarz wziął za cel starszego inżyniera DevOps przez wykorzystanie podatności zewnętrznego oprogramowania. 
+Atakujący wykorzystał podatności do dostarczenia oprogramowania malware, obejścia zabezpieczeń, oraz uzyskania 
+nieautoryzowanego dostępu do kopii zapasowych w chmurze.
 
 5. Cel działania,
 
@@ -31,7 +31,6 @@ uzyskanych w trakcie incydentu. W środowisku developerskim nie było jednak ża
 
 Niemniej, jak zostało później ustalone, pierwszy atak został wykorzystany do zidentyfikowania celów do zainicjowania
 późniejszego drugiego ataku.
-
 
 6. Naruszone elementy CIA:
 
@@ -68,14 +67,16 @@ Gather Victim Organization Information (wewnętrzne sekrety systemu LastPass, in
 Weaponization:  
 
 Develop Capabilities (przygotowanie oprogramowania malware)
+Obtain Capabilities (wykorzystanie podatności zewnętrznego oprogramowania)
 
 Delivery:
 
-
+Brak konkretnych danych w jaki sposób adwersarz dostarczył szkodliwe oprogramowanie.
 
 Exploitation:
 
-
+Exploitation for Privilege Escalation (obejście istniejących zabezpieczeń w celu uzyskania nieautoryzowanego
+dostępu do danych)
 
 Installation:
 
@@ -83,12 +84,28 @@ Installation:
 
 Command & Control:
 
-
+Brak danych, aby adwersarz uzyskał zdalną kontrolę nad systemami. Tym bardziej, że nie dostał się on do systemów
+produkcyjnych.
 
 Actions on Objectives:
 
+Data from Cloud Storage (pozyskanie danych z backupów chmurowych, sekretów API, sekretów integracji z oprogramowaniem 
+zewnętrznym, zaszyfrowane i niezaszyfrowane dane klientów)
 
 
 8. Co poszło nie tak po stronie obrońców?
+
+Niewystarczające zabezpieczenia w komputerach inżynierów oprogramowania, lub nieznajomość właściwych zasad bezpieczeństwa 
+przez ich użytkowników.
+Korzystanie z podatnego oprogramowania zewnętrznego, co pozwoliło adwersarzowi wykorzystanie ich, by dostać się
+do danych.
+Niewłaściwy hardening zabezpieczeń po pierwszym incydencie, co pozwoliło adwersarzowi na kolejny atak w późniejszym terminie
+używając informacji zebranych w trakcie pierwszego incydentu bezpieczeństwa.
+
 9. Gdzie można było przerwać incydent?
+
+
+
 10. Trzy rekomendacje bezpieczeństwa
+
+
