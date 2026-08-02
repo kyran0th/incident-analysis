@@ -29,24 +29,24 @@ Nie było żadnego kontaktu od atakujących, ani żadnych żądań. Nie udało s
 Nie ma również żadnych dowodów, by atakujący był zaangażowany w marketing lub sprzedaż jakichkolwiek informacji 
 uzyskanych w trakcie incydentu. W środowisku developerskim nie było jednak żadnych danych klientów.
 
-Niemniej, jak zostało później ustalone, pierwszy atak został wykorzystany do zidentyfikowania celów do zainicjowania
-późniejszego drugiego ataku.
+Niemniej, jak zostało później ustalone, pierwszy atak został wykorzystany do zidentyfikowania celów aby zainicjować 
+późniejszy, drugi atak.
 
 6. Naruszone elementy CIA:
 
-Poufność:
+Poufność (C):
 
 Została naruszona.
 Wykradzione zostały dane konfiguracji systemu, sekrety API, sekrety integracji zewnętrznych, oraz zaszyfrowane i 
 niezaszyfrowane dane klientów.
 
-Integralność:
+Integralność (I):
 
 Nie została naruszona.
 Nie ma żadnych dowodów na jakiekolwiek zmiany w kodzie oraz oprogramowaniu, a wszystkie środowiska developerskie zostały
 usunięte oraz odbudowane, by upewnić się w powstrzymaniu i usunięciu atakującego ze wszystkich systemów.
 
-Dostępność:
+Dostępność (A):
 
 Nie została naruszona.
 Wszystkie systemy produkcyjne działały niezależnie od atakowanych systemów, nie było więc żadnych przerw w działaniu systemów
@@ -95,7 +95,7 @@ zewnętrznym, zaszyfrowane i niezaszyfrowane dane klientów)
 
 8. Co poszło nie tak po stronie obrońców?
 
-Niewystarczające zabezpieczenia w komputerach inżynierów oprogramowania, lub nieznajomość właściwych zasad bezpieczeństwa 
+Niewystarczające zabezpieczenia w komputerach inżynierów oprogramowania lub nieznajomość właściwych zasad bezpieczeństwa 
 przez ich użytkowników.
 Korzystanie z podatnego oprogramowania zewnętrznego, co pozwoliło adwersarzowi wykorzystanie ich, by dostać się
 do danych.
